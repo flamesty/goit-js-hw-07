@@ -24,7 +24,7 @@ function createBoxes(amount) {
         const addDiv = document.createElement("div");
         startWidth += 10;
         startHeight += 10;
-        addDiv.style = ‘background - color: ' + ‘#’ + (Math.random().toString(16) + ‘000000’).substring(2, 8).toUpperCase() + ‘; ’ + `width: ${startWidth}px; height: ${startHeight}px;';
+        addDiv.style = 'background - color: ' + '#' + (Math.random().toString(16) + '000000').substring(2, 8).toUpperCase() + ';' + 'width: ${startWidth}px; height: ${startHeight}px;';
         bigBox.appendChild(addDiv);
         console.log(bigBox.children);
     }
