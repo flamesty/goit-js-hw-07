@@ -10,12 +10,14 @@
 // Каждый следующий div после первого, должен быть шире и выше предыдущего на 10px
 // Создай функцию destroyBoxes(), которая очищает div#boxes.
 
-const btnCreateRef = document.querySelector(‘button[data - action=“render”]’);
-const btnDestroyRef = document.querySelector(‘button[data - action=“destroy”]’);
+const btnCreateRef = document.querySelector(‘button[data - action = “render”]’);
+const btnDestroyRef = document.querySelector(‘button[data - action = “destroy”]’);
 const inputQntityRef = document.querySelector(‘div#controls input’);
 const bigBox = document.querySelector(‘div#boxes’);
+
 let startWidth = 20;
 let startHeight = 20;
+
 function createBoxes(amount) {
     let num = inputQntityRef.value;
     for (let i = 0; i < num; i += 1) {
@@ -33,5 +35,6 @@ function destroyBoxes(event) {
     startWidth = 20;
     startHeight = 20;
 };
+
 btnCreateRef.addEventListener(‘click’, createBoxes);
 btnDestroyRef.addEventListener(‘click’, destroyBoxes);
